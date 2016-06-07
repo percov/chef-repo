@@ -1,0 +1,7 @@
+name 'hello_world_server'
+maintainer 'Wilson Perdomo'
+maintainer_email 'wilson.perdomo@coveros.com'
+license 'all_rights'
+description 'Installs/Configures hello_world_server'
+long_description 'Installs/Configures hello_world_server'
+version '0.1.0'
