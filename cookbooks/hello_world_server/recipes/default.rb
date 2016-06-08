@@ -16,7 +16,7 @@ service 'tomcat' do
   #provider Chef::Provider::Service::Systemd
 end
 # finding docker image that images init find for platform in kitchen yml
-# sol 2: 
+# sol 2:
 
 
 # yum install wget
@@ -35,7 +35,7 @@ bash 'setup_yum' do
   cwd ::File.dirname('/home/centos')
   code <<-EOH
     yum clean all
-    yum install hello-world -y
+    yum install hello_world -y
     EOH
 end
 
@@ -43,7 +43,7 @@ end
 # rpm_package 'hello-world-sample-random-gen-1.0.2-rpm' do
 #   action :install
 #   source '/tmp/hello-world-sample-random-gen-1.0.2-rpm.rpm'
-# end	
+# end
 
 bash 'restart_tomcat' do
   cwd ::File.dirname('/tmp')
