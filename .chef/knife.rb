@@ -11,3 +11,4 @@ validation_key           "#{current_dir}/coveros-validator.pem"
 chef_server_url          "https://ec2-52-91-100-140.compute-1.amazonaws.com/organizations/coveros"
 cookbook_path            ["#{current_dir}/../cookbooks"]
 knife[:aws_credential_file] = "/home/centos/aws.txt"
+chef_client_path 'chef-client -l debug'
